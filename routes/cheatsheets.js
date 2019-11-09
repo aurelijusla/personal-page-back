@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
     const cheatsheet = new Cheatsheet({
         name: req.body.name,
         description: req.body.description,
-        installCommand: req.body.description,
+        installCommand: req.body.installCommand,
         downloadLink: req.body.downloadLink,
         docs: req.body.docs
     });
